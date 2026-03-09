@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import { ArrowRight, Compass } from 'lucide-react';
+import { ArrowRight, Compass, Rocket, Users, Building, MapPin } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -22,6 +22,7 @@ const Hero = () => {
           
           <div className="hero-actions fade-in" style={{ animationDelay: '0.3s' }}>
             <a href="#apply" className="btn btn-primary btn-lg">
+              <Rocket size={20} style={{ marginRight: '8px' }} />
               Apply to Pitch <ArrowRight size={20} style={{ marginLeft: '8px' }} />
             </a>
             <a href="#startups" className="btn btn-outline btn-lg">
@@ -29,15 +30,33 @@ const Hero = () => {
             </a>
           </div>
           
-          <div className="hero-stats fade-in" style={{ animationDelay: '0.4s' }}>
-            <div className="stat">
-              <span className="stat-value">500+</span>
-              <span className="stat-label">Startups Applied</span>
+          <div className="hero-stats-new fade-in" style={{ animationDelay: '0.4s' }}>
+            <div className="stat-item-new">
+              <div className="stat-icon-new">
+                <Users size={20} />
+              </div>
+              <div className="stat-info-new">
+                <span className="stat-value-new">500+</span>
+                <span className="stat-label-new">Startups Applied</span>
+              </div>
             </div>
-            <div className="stat-divider"></div>
-            <div className="stat">
-              <span className="stat-value">50+</span>
-              <span className="stat-label">Active Investors</span>
+            <div className="stat-item-new">
+              <div className="stat-icon-new">
+                <Building size={20} />
+              </div>
+              <div className="stat-info-new">
+                <span className="stat-value-new">50+</span>
+                <span className="stat-label-new">Active Investors</span>
+              </div>
+            </div>
+            <div className="stat-item-new">
+              <div className="stat-icon-new">
+                <MapPin size={20} />
+              </div>
+              <div className="stat-info-new">
+                <span className="stat-value-new">20+</span>
+                <span className="stat-label-new">Cities Represented</span>
+              </div>
             </div>
           </div>
         </div>

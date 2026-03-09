@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search, Rocket } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
@@ -47,7 +47,10 @@ const Navbar = () => {
           <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
           <Link to="/partner" onClick={() => setIsMobileMenuOpen(false)}>Partner With Us</Link>
           <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
-          <Link to="/contact" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>Apply to Pitch</Link>
+          <Link to="/contact" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>
+            <Rocket size={18} style={{ marginRight: '8px' }} />
+            Apply to Pitch
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
