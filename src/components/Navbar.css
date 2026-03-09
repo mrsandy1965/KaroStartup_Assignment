@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
   z-index: 1000;
   transition: var(--transition);
   background-color: transparent;
@@ -11,7 +11,7 @@
 
 .navbar.scrolled {
   background-color: #ffffff;
-  padding: 1rem 0;
+  padding: 0.75rem 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -19,18 +19,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
 }
 
 /* Logo */
 .logo {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: #111111;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 .navbar.scrolled .logo {
@@ -40,20 +42,19 @@
 /* Search Bar Inline */
 .navbar-search {
   flex: 1;
-  max-width: 400px;
-  margin: 0 2rem;
+  max-width: 360px;
   position: relative;
   display: flex;
 }
 
 .navbar-search input {
   width: 100%;
-  padding: 10px 20px;
-  padding-right: 44px;
+  padding: 8px 16px;
+  padding-right: 40px;
   border-radius: 100px;
   border: 1px solid #EBEBEB;
   background: #f9fafb;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #111;
   transition: all 0.2s ease;
 }
@@ -67,11 +68,11 @@
 
 .search-btn {
   position: absolute;
-  right: 6px;
+  right: 5px;
   top: 50%;
   transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background: var(--color-primary);
   color: white;
@@ -80,18 +81,14 @@
   justify-content: center;
   border: none;
   cursor: pointer;
-  transition: background 0.2s;
-}
-
-.search-btn:hover {
-  background: #CC1616;
 }
 
 /* Nav Links */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-shrink: 0;
 }
 
 .nav-links a {
@@ -99,23 +96,18 @@
   font-weight: 500;
   text-decoration: none;
   transition: var(--transition);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .nav-links a:hover {
   color: var(--color-primary);
 }
 
-.navbar.scrolled .nav-links a {
-  color: #333333;
-}
-
-.navbar.scrolled .nav-links a:hover {
-  color: var(--color-primary);
-}
-
-.nav-links .btn {
-  color: #ffffff !important;
+.nav-links .btn-primary {
+  padding: 8px 20px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  white-space: nowrap;
 }
 
 /* Desktop Utilities */
@@ -134,10 +126,6 @@
   border: none;
   color: #111111;
   cursor: pointer;
-}
-
-.navbar.scrolled .mobile-menu-btn {
-  color: #111111;
 }
 
 @media (max-width: 992px) {
@@ -165,27 +153,25 @@
   }
 
   .nav-links.active {
-    max-height: 500px; /* Arbitrary large number to allow sliding */
-    padding: 2rem;
+    max-height: 500px;
+    padding: 1.5rem;
   }
   
   .mobile-only {
     display: flex !important;
     width: 100%;
-    max-width: 100%;
-    margin: 0 0 1.5rem 0;
+    margin-bottom: 1rem;
   }
 
   .nav-links a {
-    color: #111111;
     width: 100%;
-    padding: 0.75rem 0;
+    padding: 0.6rem 0;
     border-bottom: 1px solid #EBEBEB;
   }
 
-  .nav-links a:last-child {
-    border-bottom: none;
+  .nav-links .btn-primary {
     margin-top: 1rem;
-    text-align: center;
+    width: 100%;
+    justify-content: center;
   }
 }
