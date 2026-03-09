@@ -1,0 +1,27 @@
+.karo-startup-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem;
+  background: linear-gradient(135deg, rgba(108, 71, 255, 0.1), rgba(10, 10, 26, 0.9));
+  border-color: rgba(108, 71, 255, 0.2);
+}
+
+.karo-desc {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.karo-desc strong {
+  color: var(--color-text-main);
+}
+
+.karo-actions {
+  margin-top: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .karo-startup-wrapper {
+    padding: 2rem;
+  }
+}
