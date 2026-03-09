@@ -28,9 +28,7 @@ const Navbar = () => {
           <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>About Us</Link>
           <Link to="/partner" onClick={() => setIsMobileMenuOpen(false)}>Partner With Us</Link>
           <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
-          {location.pathname === '/' && (
-            <a href="#apply" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>Apply to Pitch</a>
-          )}
+          <Link to="/contact" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>Apply to Pitch</Link>
         </div>
 
         <button 
