@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './CTASection.css';
 import { Rocket } from 'lucide-react';
 
@@ -12,13 +13,14 @@ const CTASection = () => {
             Whether you're a startup founder with a story to share or looking to pitch, we’re here to help you take the next step.
           </p>
           <div className="cta-actions">
-            <a href="#" className="btn cta-btn">Contact Us →</a>
+            <Link to="/contact" className="btn cta-btn">Contact Us →</Link>
           </div>
         </div>
       </div>
     </section>
   );
 };
+
 
 export default CTASection;
 

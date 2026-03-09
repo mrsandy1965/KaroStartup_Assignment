@@ -1,32 +1,29 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import HowItWorks from './components/HowItWorks';
-import WhoCanApply from './components/WhoCanApply';
-import Investors from './components/Investors';
-import FeaturedStartups from './components/FeaturedStartups';
-import AboutKaroStartup from './components/AboutKaroStartup';
-import CTASection from './components/CTASection';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import Partner from './pages/Partner';
+import Contact from './pages/Contact';
 
 function App() {
+
   return (
-    <div className="app">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <HowItWorks />
-        <WhoCanApply />
-        <Investors />
-        <FeaturedStartups />
-        <AboutKaroStartup />
-        <CTASection />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/partner" element={<Partner />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
+
 
 export default App;

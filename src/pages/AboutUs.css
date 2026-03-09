@@ -1,0 +1,162 @@
+.about-page {
+  padding-top: 100px;
+}
+
+/* Hero Section */
+.about-hero-section {
+  padding: 80px 0;
+}
+
+.about-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #111111;
+  margin-bottom: 1.5rem;
+}
+
+.about-hero-subtitle {
+  font-size: 1.25rem;
+  color: #555555;
+  max-width: 600px;
+  margin: 0 auto 4rem;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  background: var(--color-bg-light);
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  margin-top: 2rem;
+}
+
+.about-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #EBEBEB;
+}
+
+.about-stat-item:last-child {
+  border-right: none;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111111;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #555555;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Our Story Section */
+.story-text p {
+  color: #555555;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.team-photo {
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Mission/Vision & Values Cards */
+.mb-5 {
+  margin-bottom: 4rem;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(229, 25, 25, 0.1);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mission-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #111111;
+}
+
+.mission-card p {
+  color: #555555;
+  line-height: 1.6;
+}
+
+.value-card {
+  padding: 2.5rem 2rem;
+}
+
+.value-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #111111;
+}
+
+.value-card p {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .about-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .about-stat-item:nth-child(2) {
+    border-right: none;
+  }
+  
+  .about-stat-item {
+    padding: 1.5rem 0;
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .about-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-stat-item {
+    border-right: none;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 2rem 0;
+  }
+  
+  .about-stat-item:last-child {
+    border-bottom: none;
+  }
+  
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}

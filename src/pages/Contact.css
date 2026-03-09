@@ -1,0 +1,103 @@
+.contact-page {
+  padding-top: 100px;
+}
+
+.contact-hero-section {
+  padding: 60px 0 40px;
+}
+
+.contact-intro {
+  font-size: 1.125rem;
+  color: #555555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+/* Reusing contact-item from Partner page, adding specifics */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  color: #555555;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(229, 25, 25, 0.1);
+  color: var(--color-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-item h4 {
+  color: #111111;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  margin: 0 0 0.25rem;
+  line-height: 1.5;
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+  font-size: 1.5rem;
+  color: #111111;
+  margin-bottom: 2rem;
+}
+
+.form-select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #111111;
+  background-color: #F8F9FA;
+  transition: var(--transition);
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(229, 25, 25, 0.1);
+}
+
+@media (max-width: 992px) {
+  .contact-content-section .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 2rem;
+  }
+}
