@@ -15,10 +15,6 @@ const Footer = () => {
             <p className="footer-desc">
               India's premier startup discovery platform connecting Bharat founders directly with top-tier investors.
               <br/><br/>
-              Share the assignment at: <a href="mailto:business@karostartup.com" style={{color: '#fff', textDecoration: 'underline'}}>business@karostartup.com</a>
-              <br/>
-              Dm: 9315194393, once you submit the assignment
-              <br/><br/>
               Reach out to us for any queries: <span style={{color: '#fff'}}>9315194393</span>.
             </p>
             <div className="social-links">

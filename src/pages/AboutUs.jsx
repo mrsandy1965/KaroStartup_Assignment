@@ -52,7 +52,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="story-image">
-              <img src="/about_team_photo.png" alt="KaroStartup Team" className="team-photo" />
+              <img src="/story.png" alt="KaroStartup Team" className="team-photo" />
             </div>
           </div>
         </div>

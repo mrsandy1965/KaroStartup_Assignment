@@ -30,7 +30,7 @@ const FeaturedStartups = () => {
         <div className="text-center">
           <h2 className="section-title">Featured <span className="text-gradient">Startups</span></h2>
           <p className="section-subtitle">
-            A sneak peek at some of the incredible startups from the Karo Pitch community.
+            Example startup cards showcasing the incredible founders in the Karo Pitch ecosystem.
           </p>
         </div>
 
