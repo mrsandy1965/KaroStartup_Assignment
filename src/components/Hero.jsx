@@ -4,9 +4,13 @@ import { ArrowRight, Compass } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero-bg-glow"></div>
-      <div className="container hero-container">
+    <section className="hero bg-mesh-gradient">
+      <div className="particles-overlay">
+        <div className="particle" style={{ width: '400px', height: '400px', top: '-100px', left: '-100px', animationDelay: '0s' }}></div>
+        <div className="particle" style={{ width: '300px', height: '300px', bottom: '0', right: '0', animationDelay: '2s' }}></div>
+        <div className="particle" style={{ width: '200px', height: '200px', top: '20%', right: '10%', animationDelay: '4s' }}></div>
+      </div>
+      <div className="container hero-container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="hero-content">
           <div className="badge fade-in">Introducing Karo Pitch v1.0</div>
           <h1 className="hero-title fade-in" style={{ animationDelay: '0.1s' }}>
