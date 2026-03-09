@@ -27,7 +27,7 @@
   filter: grayscale(0%);
   opacity: 1;
   border-color: var(--color-primary);
-  background: rgba(108, 71, 255, 0.1);
+  background: rgba(229, 25, 25, 0.05);
 }
 
 .logo-placeholder-text {
@@ -38,7 +38,7 @@
 }
 
 .logo-placeholder:hover .logo-placeholder-text {
-  color: var(--color-text-main);
+  color: #111111;
 }
 
 @media (max-width: 992px) {

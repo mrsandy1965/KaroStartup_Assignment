@@ -17,7 +17,7 @@
   width: 64px;
   height: 64px;
   border-radius: 16px;
-  background: var(--color-gradient, linear-gradient(135deg, var(--color-primary), var(--color-accent)));
+  background: var(--color-primary);
   color: white;
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 4px 10px;
-  background: rgba(108, 71, 255, 0.1);
+  background: rgba(229, 25, 25, 0.1);
   color: var(--color-primary);
   border-radius: 100px;
   font-weight: 600;
@@ -68,7 +68,7 @@
   justify-content: center;
   width: 60px;
   height: 60px;
-  border: 1px solid #e9ecef;
+  border: 1px solid #EBEBEB;
   border-radius: 12px;
   color: var(--color-primary);
   font-weight: 600;
@@ -78,7 +78,7 @@
 }
 
 .startup-vote:hover {
-  background: rgba(108, 71, 255, 0.1);
+  background: rgba(229, 25, 25, 0.05);
   border-color: var(--color-primary);
 }
 
@@ -93,3 +93,4 @@
     gap: 0.5rem;
   }
 }
+

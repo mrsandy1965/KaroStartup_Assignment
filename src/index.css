@@ -1,14 +1,14 @@
 :root {
-  --color-primary: #6C47FF;
-  --color-primary-dark: #5231db;
+  --color-primary: #E51919;
+  --color-primary-dark: #CC0000;
   --color-secondary: #FFFFFF;
-  --color-accent: #FF6B35;
-  --color-accent-hover: #e55a2b;
-  --color-bg-dark: #0A0A1A;
-  --color-bg-card: rgba(255, 255, 255, 0.05);
-  --color-bg-card-hover: rgba(255, 255, 255, 0.1);
-  --color-text-main: #FFFFFF;
-  --color-text-muted: #A0A0B0;
+  --color-accent: #111111;
+  --color-accent-hover: #333333;
+  --color-bg-light: #FFFFFF;
+  --color-bg-alt: #F8F9FA;
+  --color-bg-dark: #141A29;
+  --color-text-main: #111111;
+  --color-text-muted: #555555;
   
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-bg-dark);
+  background-color: var(--color-bg-light);
   color: var(--color-text-main);
   line-height: 1.6;
   overflow-x: hidden;
@@ -67,10 +67,8 @@ img {
 
 /* Typography Utilities */
 .text-gradient {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--color-primary);
+  /* Removed gradient for cleaner brand look */
 }
 
 .text-center {
@@ -104,34 +102,34 @@ img {
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--color-text-main);
+  color: #FFFFFF;
 }
 
 .btn-primary:hover {
   background-color: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(108, 71, 255, 0.3);
+  box-shadow: 0 10px 20px rgba(229, 25, 25, 0.2);
 }
 
 .btn-accent {
   background-color: var(--color-accent);
-  color: var(--color-text-main);
+  color: #FFFFFF;
 }
 
 .btn-accent:hover {
   background-color: var(--color-accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--color-text-main);
+  color: var(--color-primary);
   border: 2px solid var(--color-primary);
 }
 
 .btn-outline:hover {
-  background-color: rgba(108, 71, 255, 0.1);
+  background-color: var(--color-primary);
+  color: #FFFFFF;
   transform: translateY(-2px);
 }
 
@@ -141,12 +139,7 @@ img {
 }
 
 .section-light {
-  background-color: #ffffff;
-  color: #111111;
-}
-
-.section-light .section-subtitle {
-  color: #555555;
+  background-color: var(--color-bg-alt);
 }
 
 .grid {
@@ -166,36 +159,35 @@ img {
   grid-template-columns: repeat(4, 1fr);
 }
 
-/* Card Utilities (Glassmorphism) */
+/* Card Utilities (Clean White Cards) */
 .glass-card {
-  background: var(--color-bg-card);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
   padding: 2rem;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
   transition: var(--transition);
 }
 
 .glass-card:hover {
-  background: var(--color-bg-card-hover);
   transform: translateY(-5px);
-  border-color: rgba(108, 71, 255, 0.3);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  border-color: rgba(229, 25, 25, 0.2);
 }
 
 .light-card {
-  background: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 16px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 12px;
   padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
   transition: var(--transition);
 }
 
 .light-card:hover {
-  background: #ffffff;
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-  border-color: rgba(108, 71, 255, 0.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+  border-color: rgba(229, 25, 25, 0.2);
 }
 
 /* Animations */

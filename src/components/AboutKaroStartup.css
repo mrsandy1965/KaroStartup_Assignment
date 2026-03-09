@@ -2,8 +2,9 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 4rem;
-  background: linear-gradient(135deg, rgba(108, 71, 255, 0.1), rgba(10, 10, 26, 0.9));
-  border-color: rgba(108, 71, 255, 0.2);
+  background: var(--color-bg-light);
+  border: 1px solid #EBEBEB;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
 }
 
 .karo-desc {
@@ -13,7 +14,7 @@
 }
 
 .karo-desc strong {
-  color: var(--color-text-main);
+  color: #111111;
 }
 
 .karo-actions {
@@ -25,3 +26,4 @@
     padding: 2rem;
   }
 }
+
